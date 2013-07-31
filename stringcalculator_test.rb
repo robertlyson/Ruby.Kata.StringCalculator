@@ -1,6 +1,7 @@
 require 'test/unit'
+load 'string_calculator.rb'
 
-class StringCalculator < Test::Unit::TestCase
+class StringCalculatorTests < Test::Unit::TestCase
 
   # Called before every test method runs. Can be used
   # to set up fixture information.
@@ -15,10 +16,10 @@ class StringCalculator < Test::Unit::TestCase
     # Do nothing
   end
 
-  # Fake test
-  def test_fail
+  def test_empty_input_returns_empty
+    sut = StringCalculator.new
+    actual = sut.Add("")
 
-    # To change this template use File | Settings | File Templates.
-    fail('Not implemented')
+    assert_equal(0, actual)
   end
 end
