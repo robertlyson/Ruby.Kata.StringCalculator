@@ -16,10 +16,17 @@ class StringCalculatorTests < Test::Unit::TestCase
     # Do nothing
   end
 
-  def test_empty_input_returns_empty
+  def test_empty_input_returns_zero
     sut = StringCalculator.new
     actual = sut.Add("")
 
     assert_equal(0, actual)
+  end
+
+  def test_two_numbers_in_input_returns_sum
+    sut = StringCalculator.new
+    actual = sut.Add("1,2")
+
+    assert_equal(3, actual)
   end
 end
