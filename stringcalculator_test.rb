@@ -34,6 +34,7 @@ class StringCalculatorTests < Test::Unit::TestCase
     sut = StringCalculator.new
     actual = sut.Add("1,2/3")
 
+
     assert_equal(6, actual)
   end
 end
