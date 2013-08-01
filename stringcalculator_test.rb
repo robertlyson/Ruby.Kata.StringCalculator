@@ -29,4 +29,8 @@ class StringCalculatorTests < Test::Unit::TestCase
 
     assert_equal(3, actual)
   end
+
+  def test_third_Test
+
+  end
 end
