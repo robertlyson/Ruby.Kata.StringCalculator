@@ -38,7 +38,10 @@ class StringCalculatorTests < Test::Unit::TestCase
     assert_equal(6, actual)
   end
 
-  def test_fourt_test
+  def test_fourth_test
+     sut = StringCalculator.new
+    actual = sut.Add("1,2/3,2")
 
+    assert_actual(8, actual)
   end
 end
